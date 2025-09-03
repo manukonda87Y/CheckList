@@ -2,13 +2,14 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    "rootDir": "APIS",
+    "rootDir": "src",
     "outDir": "dist",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs",
+    "module": "NodeNext",
     "target": "esnext",
+    "moduleResolution": "NodeNext",
     "types": [],
     // For nodejs:
     "lib": ["esnext"],
@@ -43,6 +44,6 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["APIS/**/*.ts"] /* Files to include in the compilation. */,
+  "include": ["src/**/*.ts"] /* Files to include in the compilation. */,
   "exclude": ["node_modules"]
 }
